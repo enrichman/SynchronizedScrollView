@@ -1,4 +1,4 @@
-package it.enrichman.synchronizedscrollview;
+package it.enricocandino.synchronizedscrollview;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,7 +7,7 @@ import android.widget.ScrollView;
 
 /**
  * Copyright (c) 2015 Enrico Candino
- *
+ * <p/>
  * Distributed under the MIT License.
  */
 public class SynchronizedScrollView extends ScrollView implements Synchronizer.Synchronizable {

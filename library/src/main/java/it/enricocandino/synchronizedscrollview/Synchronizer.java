@@ -1,11 +1,11 @@
-package it.enrichman.synchronizedscrollview;
+package it.enricocandino.synchronizedscrollview;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Copyright (c) 2015 Enrico Candino
- *
+ * <p/>
  * Distributed under the MIT License.
  */
 public class Synchronizer {
@@ -15,7 +15,8 @@ public class Synchronizer {
     private List<Synchronizable> synchronizableList;
     private int mOffset;
 
-    private Synchronizer() {}
+    private Synchronizer() {
+    }
 
     public static Synchronizer getInstance() {
         if (instance == null)
@@ -25,7 +26,7 @@ public class Synchronizer {
     }
 
     public void register(Synchronizable synchronizable) {
-        if(synchronizableList == null)
+        if (synchronizableList == null)
             synchronizableList = new ArrayList<>();
 
         synchronizable.onUpdate(mOffset);
@@ -34,17 +35,17 @@ public class Synchronizer {
     }
 
     public void unregister(Synchronizable synchronizable) {
-        if(synchronizableList != null)
+        if (synchronizableList != null)
             synchronizableList.remove(synchronizable);
     }
 
     public void update(Synchronizable sender, int update) {
-        if(update < 0) update = 0;
+        if (update < 0) update = 0;
 
         mOffset = update;
 
-        for(Synchronizable s : synchronizableList) {
-            if(s != sender)
+        for (Synchronizable s : synchronizableList) {
+            if (s != sender)
                 s.onUpdate(update);
         }
     }

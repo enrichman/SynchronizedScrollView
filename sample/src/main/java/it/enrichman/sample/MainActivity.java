@@ -5,11 +5,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 
 /**
  * Copyright (c) 2015 Enrico Candino
- *
+ * <p/>
  * Distributed under the MIT License.
  */
 public class MainActivity extends FragmentActivity {
@@ -30,13 +31,28 @@ public class MainActivity extends FragmentActivity {
 
     private class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
 
+        private int[] fragmentColors = {
+                R.color.color_1,
+                R.color.color_2,
+                R.color.color_3,
+                R.color.color_4,
+                R.color.color_5
+        };
+
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
         @Override
         public Fragment getItem(int position) {
-            return new ScrollableFragment();
+            Fragment fragment = new ScrollableFragment();
+
+            Bundle args = new Bundle();
+            int color = ContextCompat.getColor(MainActivity.this, fragmentColors[position]);
+            args.putInt("color", color);
+            fragment.setArguments(args);
+
+            return fragment;
         }
 
         @Override

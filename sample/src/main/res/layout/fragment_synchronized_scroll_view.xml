@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<it.enrichman.synchronizedscrollview.SynchronizedScrollView
+<it.enricocandino.synchronizedscrollview.SynchronizedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/my_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="40sp"
-            android:text="@string/long_text"/>
-
-    </RelativeLayout>
-
-</it.enrichman.synchronizedscrollview.SynchronizedScrollView>
+</it.enricocandino.synchronizedscrollview.SynchronizedScrollView>

@@ -1,1 +1,1 @@
-include ':synchronizedscrollview', ':library', ':sample'
+include ':library', ':sample'
