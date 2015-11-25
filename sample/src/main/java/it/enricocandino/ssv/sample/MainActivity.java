@@ -1,4 +1,4 @@
-package it.enrichman.sample;
+package it.enricocandino.ssv.sample;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
