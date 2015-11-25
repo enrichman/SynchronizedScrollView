@@ -10,7 +10,7 @@ import android.support.v4.view.ViewPager;
 
 /**
  * Copyright (c) 2015 Enrico Candino
- * <p/>
+ * <p>
  * Distributed under the MIT License.
  */
 public class MainActivity extends FragmentActivity {

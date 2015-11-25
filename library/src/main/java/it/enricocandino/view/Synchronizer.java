@@ -1,11 +1,11 @@
-package it.enricocandino.synchronizedscrollview;
+package it.enricocandino.view;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Copyright (c) 2015 Enrico Candino
- * <p/>
+ * <p>
  * Distributed under the MIT License.
  */
 public class Synchronizer {

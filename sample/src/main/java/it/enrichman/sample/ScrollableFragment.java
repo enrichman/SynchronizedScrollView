@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import it.enricocandino.synchronizedscrollview.SynchronizedScrollView;
+import it.enricocandino.view.SynchronizedScrollView;
 
 /**
  * Copyright (c) 2015 Enrico Candino
- * <p/>
+ * <p>
  * Distributed under the MIT License.
  */
 public class ScrollableFragment extends Fragment {
