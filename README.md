@@ -1,7 +1,5 @@
 # SynchronizedScrollView  [![Build Status](https://travis-ci.org/enrichman/SynchronizedScrollView.svg?branch=master)](https://travis-ci.org/enrichman/SynchronizedScrollView) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview/badge.svg)](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview)
 
-=================
-
 Custom ScrollView that keeps fragments in a ViewPager synchronized at the same height
 
 
