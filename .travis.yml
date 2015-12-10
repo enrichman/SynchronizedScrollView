@@ -4,8 +4,8 @@ android:
     - build-tools-23.0.1
     - android-23
 
-    # Specify at least one system image,
-    # if you need to run emulator(s) during your tests
+    - extra-android-m2repository
+    
     - sys-img-armeabi-v7a-android-10
     - sys-img-x86-android-10
 
