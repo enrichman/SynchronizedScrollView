@@ -1,6 +1,7 @@
 package it.enricocandino.view;
 
 import android.content.Context;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
@@ -50,7 +51,7 @@ public class SynchronizedScrollView extends ScrollView implements Synchronizer.S
     public void onUpdate(int update) {
 
         // listen for scrolls from your siblings
-        setScrollY(update);
+        scrollTo(getScrollX(), update);
     }
 
     /*
@@ -61,7 +62,7 @@ public class SynchronizedScrollView extends ScrollView implements Synchronizer.S
 
         @Override
         public void onGlobalLayout() {
-            if (Build.Version.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                 SynchronizedScrollView.this.getViewTreeObserver().removeOnGlobalLayoutListener(this);
             }else{
                 SynchronizedScrollView.this.getViewTreeObserver().removeGlobalOnLayoutListener(this);
