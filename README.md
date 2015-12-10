@@ -9,14 +9,14 @@ Download
 
 Add the dependency via Gradle:
 ```groovy
-compile 'it.enricocandino:synchronizedscrollview:1.0.0'
+compile 'it.enricocandino:synchronizedscrollview:1.0.1'
 ```
 or Maven:
 ```xml
 <dependency>
     <groupId>it.enricocandino</groupId>
     <artifactId>synchronizedscrollview</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
