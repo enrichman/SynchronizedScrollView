@@ -61,7 +61,11 @@ public class SynchronizedScrollView extends ScrollView implements Synchronizer.S
 
         @Override
         public void onGlobalLayout() {
-            SynchronizedScrollView.this.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+            if (Build.Version.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                SynchronizedScrollView.this.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+            }else{
+                SynchronizedScrollView.this.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+            }
             Synchronizer.getInstance().register(SynchronizedScrollView.this);
         }
     }
