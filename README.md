@@ -1,4 +1,4 @@
-# SynchronizedScrollView  [![Build Status](https://travis-ci.org/enrichman/SynchronizedScrollView.svg?branch=master)](https://travis-ci.org/enrichman/SynchronizedScrollView) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview/badge.svg)](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview)
+# SynchronizedScrollView  [![Build Status](https://travis-ci.org/enrichman/SynchronizedScrollView.svg?branch=master)](https://travis-ci.org/enrichman/SynchronizedScrollView) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview/badge.svg)](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SynchronizedScrollView-green.svg?style=true)](https://android-arsenal.com/details/1/3109)
 
 Custom ScrollView that keeps fragments in a ViewPager synchronized at the same height
 
