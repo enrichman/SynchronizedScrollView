@@ -1,6 +1,11 @@
-# SynchronizedScrollView  [![Build Status](https://travis-ci.org/enrichman/SynchronizedScrollView.svg?branch=master)](https://travis-ci.org/enrichman/SynchronizedScrollView) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview/badge.svg)](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SynchronizedScrollView-green.svg?style=true)](https://android-arsenal.com/details/1/3109)
+# SynchronizedScrollView
 
-Custom ScrollView that keeps fragments in a ViewPager synchronized at the same height
+[![Build Status](https://travis-ci.org/enrichman/SynchronizedScrollView.svg?branch=master)](https://travis-ci.org/enrichman/SynchronizedScrollView) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview/badge.svg)](https://maven-badges.herokuapp.com/maven-central/it.enricocandino/synchronizedscrollview) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SynchronizedScrollView-green.svg?style=true)](https://android-arsenal.com/details/1/3109)
+
+Custom ScrollView that keeps fragments in a ViewPager synchronized at the same height.
+
+<br/>
+<img src="http://i.giphy.com/l0COHqmbntjDxaNFK.gif" height="428" width="240">
 
 
 Download
@@ -22,8 +27,31 @@ or Maven:
 Examples
 --------
 
-Use the SynchronizedScrollView as a normal ScrollView.
+Just use the SynchronizedScrollView as a normal ScrollView:
+
+```xml
+<it.enricocandino.view.SynchronizedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+</it.enricocandino.view.SynchronizedScrollView>
+```
+
 Check the sample for a working app!
+
+Apps
+--------
+
+Let me know if you used the library in your project.
+I will be happy to list it here!
 
 Developed By
 --------
